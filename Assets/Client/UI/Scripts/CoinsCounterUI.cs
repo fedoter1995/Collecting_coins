@@ -2,7 +2,7 @@ using TMPro;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CounsCounterUI : MonoBehaviour
+public class CoinsCounterUI : MonoBehaviour
 {
     [SerializeField]
     private CoinsCounter _counter;
@@ -19,4 +19,5 @@ public class CounsCounterUI : MonoBehaviour
         _count.text = value.ToString();
 
     }
+    
 }
