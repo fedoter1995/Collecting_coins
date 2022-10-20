@@ -11,13 +11,15 @@ public class CoinsCounterUI : MonoBehaviour
 
     private void Awake()
     {
+        if (_counter == null)
+            _counter = FindObjectOfType<CoinsCounter>();
+
         _counter.OnCounterChangeEvent += ChangeValue;
     }
 
     private void ChangeValue(int value)
     {
         _count.text = value.ToString();
-
     }
     
 }
